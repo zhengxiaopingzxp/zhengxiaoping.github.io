@@ -1,0 +1,88 @@
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ 
+.planePath {
+  stroke: #D9DADA;
+  stroke-width: .1%;
+  stroke-width: .5%;
+  stroke-dasharray: 1% 2%;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.fil1 {
+  fill: #D9DADA;
+}
+
+.fil2 {
+  fill: #C5C6C6;
+}
+
+.fil4 {
+  fill: #9D9E9E;
+}
+
+.fil3 {
+  fill: #AEAFB0;
+}
+
+body {
+	width: 90%;
+	margin: 70px 5%;
+	padding: 0;
+}
+
+.logo {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#frosting {
+	-webkit-animation: frosting-opacity 2s infinite; /* Safari 4+ */
+	-webkit-transform-origin: 50% 50%;
+}
+
+#sprinkles path {
+	-webkit-animation: sprinkle-spin 1s infinite; /* Safari 4+ */
+	-webkit-transform-origin: 50% 50%;	
+}
+
+@-webkit-keyframes frosting-opacity {
+  0%, 100%   {
+  	opacity: 0;
+  	transform: rotate(0deg);
+  }
+  50% {
+  	opacity: 1;
+  	transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sprinkle-spin {
+  0%, 100%   {
+  	transform: rotate(0deg);
+  }
+  50% {
+  	transform: rotate(360deg);
+  }
+}
